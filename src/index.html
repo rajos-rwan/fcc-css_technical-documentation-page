@@ -2,61 +2,162 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Technical Documentation Page</title>
+    <title>JavaScript Documentation Page</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <nav id="navbar">
-      <header>Technical Documentation</header>
+      <header>JavaScript Documentation</header>
       <a class="nav-link" href="Introduction">Introduction</a>
       <a class="nav-link" href="Variables_and_Constants">Variables and Constants</a>
       <a class="nav-link" href="Functions">Functions</a>
       <a class="nav-link" href="Loops">Loops</a>
       <a class="nav-link" href="Objects">Objects</a>
     </nav>
+
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
-        <p></p>
+        <p>
+          JavaScript is a high-level, interpreted programming language that is
+          primarily used to create interactive and dynamic content on the web.
+          It runs directly in the browser, allowing developers to respond to
+          user actions such as clicks, form submissions, and keyboard input.
+          JavaScript works alongside HTML and CSS to control structure, style,
+          and behavior on a webpage. Over time, it has grown beyond the browser
+          and is now also used on servers, mobile applications, and desktop
+          software. Because of its flexibility and wide support, JavaScript has
+          become one of the most popular programming languages in the world.
+        </p>
       </section>
+
       <section class="main-section" id="Variables_and_Constants">
         <header>Variables and Constants</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>
+          Variables are used in JavaScript to store data values that can be
+          accessed and modified throughout a program. These values may represent
+          numbers, text, boolean values, objects, or even functions. By using
+          variables, developers can write flexible and reusable code that adapts
+          to different situations. Variables help make programs easier to
+          understand by giving meaningful names to data instead of using raw
+          values everywhere. Proper use of variables is essential for writing
+          clear, maintainable, and scalable JavaScript applications.
+        </p>
+        <p>
+          JavaScript provides three main keywords for declaring variables:
+          <code>var</code>, <code>let</code>, and <code>const</code>. The
+          <code>var</code> keyword is older and has function scope, which can
+          sometimes lead to unexpected behavior. The <code>let</code> keyword
+          introduces block scoping and allows reassignment of values. The
+          <code>const</code> keyword is used for values that should not be
+          reassigned, helping prevent accidental changes and improving code
+          reliability.
+        </p>
+        <code>
+          let age = 25;
+          const name = "Alex";
+        </code>
       </section>
+
       <section class="main-section" id="Functions">
         <header>Functions</header>
-        <p></p>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>
+          Functions are reusable blocks of code designed to perform a specific
+          task within a program. They allow developers to group related
+          instructions together and execute them whenever needed. By using
+          functions, large programs can be broken down into smaller, more
+          manageable pieces. This improves readability and makes debugging much
+          easier. Functions also help reduce repetition by allowing the same
+          logic to be reused in multiple places throughout an application.
+        </p>
+        <p>
+          In JavaScript, functions can accept parameters, which act as variables
+          that receive values when the function is called. Parameters make
+          functions more flexible by allowing them to operate on different data
+          each time they run. This means a single function can handle many
+          different scenarios without being rewritten. Well-designed functions
+          are general enough to be reused in multiple contexts.
+        </p>
+        <p>
+          Functions can also return values back to the part of the program that
+          called them. This allows the result of a calculation or operation to be
+          stored in a variable or used directly in another expression. Returning
+          values makes functions powerful building blocks for complex logic.
+          Many JavaScript programs rely heavily on functions to control the flow
+          of data and behavior throughout the application.
+        </p>
+        <code>
+          function greet(user) {
+            return "Hello, " + user;
+          }
+        </code>
         <ul>
-          <li></li>
-          <li></li>
+          <li>Functions are defined using the <code>function</code> keyword</li>
+          <li>They help organize and reuse code efficiently</li>
         </ul>
       </section>
+
       <section class="main-section" id="Loops">
         <header>Loops</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>
+          Loops are used in JavaScript to repeatedly execute a block of code as
+          long as a specified condition remains true. They are especially useful
+          when working with lists of data, such as arrays, or when performing
+          repetitive tasks. Without loops, developers would have to write the
+          same code multiple times, which would be inefficient and error-prone.
+          Loops make programs shorter, cleaner, and easier to maintain.
+        </p>
+        <p>
+          JavaScript includes several types of loops, such as <code>for</code>,
+          <code>while</code>, and <code>do...while</code>. Each type of loop is
+          suited for different situations depending on how and when the loop
+          condition should be checked. Choosing the correct loop structure helps
+          ensure that code runs efficiently and avoids infinite loops, which can
+          crash or freeze an application.
+        </p>
+        <code>
+          for (let i = 0; i < 5; i++) {
+            console.log(i);
+          }
+        </code>
         <ul>
-          <li></li>
-          <li></li>
+          <li><code>for</code> loops are useful when the number of iterations is known</li>
+          <li><code>while</code> loops run as long as a condition remains true</li>
         </ul>
       </section>
+
       <section class="main-section" id="Objects">
         <header>Objects</header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <code></code>
+        <p>
+          Objects are one of the most important data structures in JavaScript.
+          They are used to store related data and functionality together in a
+          single structure. Objects consist of properties, which are key-value
+          pairs that describe characteristics or behavior. This makes objects
+          ideal for representing real-world entities such as users, products,
+          or settings within an application.
+        </p>
+        <p>
+          Objects help organize code by grouping related information together,
+          making programs easier to understand and maintain. They also support
+          methods, which are functions stored as object properties. By combining
+          data and behavior, objects form the foundation of object-oriented
+          programming in JavaScript. Most modern JavaScript applications rely
+          heavily on objects to manage complex data and interactions.
+        </p>
+        <code>
+          const person = {
+            name: "Alex",
+            age: 25
+          };
+        </code>
+        <code>
+          console.log(person.name);
+        </code>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Objects are created using curly braces <code>{}</code></li>
+          <li>Properties are accessed using dot notation</li>
+          <li>Objects can store both data and methods</li>
         </ul>
       </section>
     </main>
